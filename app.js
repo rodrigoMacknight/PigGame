@@ -12,6 +12,19 @@ GAME RULES:
 let score, roundScore, dice, currentPlayer;
 currentPlayer = 0;
 score  = [0,0];
-dice = Math.floor(Math.random() * 6) + 1;
 
-document.querySelector('#score-0').textContent = dice;
+
+
+//get the button from dom
+const rollBtn = document.querySelector('.btn-roll');
+
+//get the dice placeholder from the DOM
+const diceImage = document.querySelector('.dice');
+diceImage.style.display = 'none';
+rollBtn.onclick = function rollDice(){
+    console.log(diceImage);
+    dice = Math.floor(Math.random() * 6) + 1;
+    diceImage.style.display = 'block';
+    diceImage.src = 'dice-' + dice + '.png';
+    
+};
