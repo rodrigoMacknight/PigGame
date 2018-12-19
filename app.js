@@ -76,11 +76,12 @@ holdBtn.onclick = function hold(){
 }
 
 function verifyWinCondition(){
-    if(score[0]>=40){
+    if(score[0]>=30){
         window.alert('player' + 0 + 'has won');
-        newGame();
-    }else if(score[1]>=40){
+        document.getElementById('name-0').textContent = 'WINNER';
+    }else if(score[1]>=30){
         window.alert('player' + 1 + 'has won');
+        document.getElementById('name-1').textContent = 'WINNER';
     }
 
 }
