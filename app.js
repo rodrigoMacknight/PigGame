@@ -110,6 +110,10 @@ function passTurn(){
 
     player0CurrentScore.textContent = 0;
     player1CurrentScore.textContent = 0;
+    //quality of life and git tests
+    document.getElementById('name-0').textContent = 'PLAYER 1';
+    document.getElementById('name-1').textContent = 'PLAYER 2';
+}
 
     player0Score.textContent = 0 ;
 
